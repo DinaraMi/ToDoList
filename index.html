@@ -10,21 +10,21 @@
 
 <body>
   <div id="app" class="app">
+    <h1>Список дел</h1>
     <div class="app__content">
-      <h1>Список дел</h1>
-      <div id="todoList" class="todo-list"></div>
       <div id="todoForm" class="todo-form">
         <form id="addTodoForm" class="add-todo-form">
-          <input type="text" id="todoTitle" class="todo-title" placeholder="Заголовок задачи" required>
-          <input type="text" id="todoText" class="todo-text" placeholder="Описание задачи" required>
+          <input type="text" id="todoTitle" class="todo-input" placeholder="Заголовок задачи" required>
+          <input type="text" id="todoText" class="todo-input" placeholder="Описание задачи" required>
           <button type="submit" class="add-button">Добавить</button>
         </form>
       </div>
-    </div>
-    <div id="filterButtons">
-      <button onclick="filterAll()">Все задачи</button>
-      <button onclick="filterActive()">Активные</button>
-      <button onclick="filterCompleted()">Выполненные</button>
+      <div id="filterButtons">
+        <button onclick="filterAll()" class="add-button">Все задачи</button>
+        <button onclick="filterActive()" class="add-button">Активные</button>
+        <button onclick="filterCompleted()" class="add-button">Выполненные</button>
+      </div>
+      <div id="todoList" class="todo-list"></div>
     </div>
   </div>
   <script src="script.js"></script>

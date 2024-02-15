@@ -1,6 +1,98 @@
 .app {
   min-width: 320px;
   max-width: 1280px;
-  background-color: #DBEAFB;
+  background-color: #F6F7FB;
   display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__content {
+  width: 92%;
+}
+
+.todo-list {
+  word-wrap: break-word;
+}
+
+li {
+  list-style: none;
+  border-radius: 8px;
+  background-color: #E6EDF4;
+}
+
+h2 {
+  background-color: #DBEAFB;
+  border-radius: 8px;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+p {
+  margin: 5px 0 10px;
+}
+
+.add-button {
+  border: 0;
+  background-color: #EDE5F7;
+  color: #CCB1E7;
+  cursor: pointer;
+}
+
+.todo-input {
+  outline: none;
+  border: 1px solid #EDE5F7;
+  border-radius: 8px;
+}
+
+.add-todo-form {
+  margin-bottom: 10px;
+}
+
+.button-wrapper {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.complete-button,
+.delete-button {
+  color: #A3C3E9;
+  background-color: #DBEAFB;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+  .app__content {
+    width: 86%;
+  }
+  
+  .button-wrapper {
+    width: 31%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .app__content {
+    width: 70%;
+  }
+
+  .button-wrapper {
+    width: 28%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .app__content {
+    width: 50%;
+  }
+
+  .button-wrapper {
+    width: 24%;
+  }
 }
